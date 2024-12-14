@@ -13,11 +13,13 @@ let listingSchema  = require("../schema.js");
 //   next();
 // };
 
-router.get("/",(req,res)=>{
+router.get("/",async(req,res)=>{
+  let data = await Listing.find({});
+
   res.render("./listings/index.ejs");
 })
 router.get("/new",(req,res)=>{
-  res.render("./listings/new.ejs");
+  res.render("./listings/new.ejs",{data});
  })
 
 
