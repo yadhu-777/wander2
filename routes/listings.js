@@ -13,7 +13,9 @@ let listingSchema  = require("../schema.js");
 //   next();
 // };
 
-
+router.get("/",(req,res)=>{
+  res.render("./listings/index.ejs");
+})
 router.get("/new",(req,res)=>{
   res.render("./listings/new.ejs");
  })
