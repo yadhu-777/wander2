@@ -1,0 +1,37 @@
+<% layout("./layout/boilerplate.ejs") %>
+
+<body>
+    <div class="row ">
+
+        <div class="card col-3 mt-3 offset-3 " >
+          <p class="mb-3"> <b><%=showdata.title %></b></p>
+          <img src="<%=showdata.image.url%>" class="card-img-top mb-2" alt="listingImage">
+           <div class="card-body ">
+          
+         
+            <p><%=showdata.price%>/Night</p></p>
+            <p><%= showdata.description %></p>
+            <p><%=showdata.location%></p>
+            <p><%=showdata.country%></p>
+           </div>
+         </div>
+
+    </div>
+         <div class="row  ">
+          <div class=" col-1 offset-3">
+            <a href="/listings/<%=showdata._id%>/edit">
+              <button class="btn btn-primary ">edit</button>
+            </a>
+          </div>
+          <div class=" col ">
+           <form method ="POST" action="/listings/<%=showdata._id%>?_method=DELETE">
+            <button class="btn btn-danger ">delete</button>
+           </form>
+          </div>
+         </div>
+
+
+ 
+     </div>
+    
+</body>

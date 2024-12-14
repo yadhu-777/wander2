@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column !important;
+    font-family: "Plus Jakarta Sans", serif ! important;
+    min-height: 100vh !important;
+    font-weight: 600 !important;
+    
+    margin: 0;
+  }
+.cont{
+    
+    flex: 1 ;
+    padding: 1rem;
+}
+.navbar-brand{
+    color: red !important;
+}
+.navbar{
+    height: 6rem !important;
+    background-color: white;
+}
+.navbar-brand{
+    font-size: 2.4rem !important;
+}
+
+.navbar-nav{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2222 !important;
+}
+
+footer{
+    background-color: #2222;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; 
+}
+/* .social-icon{
+    width: 100% !important;
+}
+.social-copy{
+    width: 100% !important;
+} */
+.social-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card{
+    border: 0rem !important;
+    background-color:0;
+
+    
+   
+    
+
+}
+
+.listy{
+   text-decoration: none  ;
+}
+.card-img-top{
+    height: 22rem !important;
+    object-fit: cover !important;
+    border-radius: 1.2rem !important;
+}
